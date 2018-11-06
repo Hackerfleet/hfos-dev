@@ -31,10 +31,10 @@ A controllable event recorder utility component
 
 """
 
-from hfos.component import handler
-from hfos.component import ConfigurableComponent
-from hfos.events.system import authorizedevent
-from hfos.logger import hilight  # , error, warn
+from isomer.component import handler
+from isomer.component import ConfigurableComponent
+from isomer.events.system import authorized_event
+from isomer.logger import hilight  # , error, warn
 from json import dumps
 from time import time
 
@@ -61,7 +61,7 @@ class Recorder(ConfigurableComponent):
 
     @handler()
     def eventhandler(self, event, *args, **kwargs):
-        if self.active and isinstance(event, authorizedevent):
+        if self.active and isinstance(event, authorized_event):
             self.log("Recording event", lvl=hilight)
             # TODO: The event fields must be serialized to record everything
             #  in order. Component is deactivated until that can be done.

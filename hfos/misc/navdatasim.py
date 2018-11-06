@@ -30,12 +30,12 @@ A controllable navdata event simulation utility
 
 
 """
-from hfos.navdata.events import sensordata
+from isomer.navdata.events import sensordata
 
-from hfos.component import ConfigurableComponent
-from hfos.logger import error, warn, verbose, hilight
+from isomer.component import ConfigurableComponent
+from isomer.logger import error, warn, verbose, hilight
 from circuits import Timer, Event
-from hfos.component import handler
+from isomer.component import handler
 from time import time
 from random import randint
 

@@ -31,7 +31,7 @@ A controllable event playback utility component
 
 """
 
-from hfos.component import ConfigurableComponent
+from isomer.component import ConfigurableComponent
 
 # from hfos.logger import error, warn
 # from time import time

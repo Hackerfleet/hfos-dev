@@ -42,7 +42,7 @@ This package a few modules to debug others, as well as the core system.
       install_requires=[
           'hfos>=1.2.0',
       ],
-      entry_points="""[hfos.components]
+      entry_points="""[isomer.components]
     recorder=hfos.misc.recorder:Recorder
     playback=hfos.misc.playback:Playback
     navdatasim=hfos.misc.navdatasim:NavdataSim

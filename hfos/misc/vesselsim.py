@@ -33,11 +33,11 @@ A controllable vessel event simulation utility
 import json
 from circuits import Timer, Event
 
-from hfos.navdata.events import updatevessel
+from isomer.navdata.events import updatevessel
 
-from hfos.component import ConfigurableComponent
-from hfos.logger import error, warn, verbose, debug
-from hfos.component import handler
+from isomer.component import ConfigurableComponent
+from isomer.logger import error, warn, verbose, debug
+from isomer.component import handler
 from time import time
 from pyproj import Geod
 
