@@ -40,7 +40,7 @@ This package a few modules to debug others, as well as the core system.
 """,
       dependency_links=[],
       install_requires=[
-          'hfos>=1.2.0',
+          'isomer>=1.0.0',
       ],
       entry_points="""[isomer.components]
     recorder=hfos.misc.recorder:Recorder
