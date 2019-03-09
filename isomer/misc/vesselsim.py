@@ -3,7 +3,7 @@
 
 # HFOS - Hackerfleet Operating System
 # ===================================
-# Copyright (C) 2011-2018 Heiko 'riot' Weinen <riot@c-base.org> and others.
+# Copyright (C) 2011-2019 Heiko 'riot' Weinen <riot@c-base.org> and others.
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as published by
@@ -100,7 +100,7 @@ class VesselSim(ConfigurableComponent):
         self.log('Sending out simulated package.', lvl=verbose)
 
         for uuid, vessel in self.vessels.items():
-            
+
             speed = vessel['speed']
             distance = speed * (time() - self.start_time)
             a = self.vessels[uuid]['coordinates'][0]
@@ -119,7 +119,7 @@ class VesselSim(ConfigurableComponent):
             coordinate = a
 
             self.log('Distance left:', no, angle, distance, coordinate,
-                 lvl=verbose)
+                     lvl=verbose)
         # event = updatevessel(time(), 'SIM')
         # self.fireEvent(event, 'navdata')
 
